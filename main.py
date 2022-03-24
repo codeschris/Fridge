@@ -1,7 +1,6 @@
-#use random module after function is working
 from random import randint
 
-fridge = ["Rice with beans", "Ugali and sukuma"]
+fridge = ["Rice and beans", "Ugali and sukuma"]
 
 #Storing your food inside the fridge
 def storeFridge():
@@ -23,3 +22,4 @@ def runSystem():
     foodPicker()
 
 #Run the system
+runSystem()
