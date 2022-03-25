@@ -1,15 +1,18 @@
 from random import randint
 
-fridge = ["Rice and beans", "Ugali and sukuma"]
+fridge = ["Rice and beans", "Ugali and sukuma", "Noodles and minced meat", "Fries and chicken", "Rice and cabbage"]
 
 #Storing your food inside the fridge
 def storeFridge():
     respond = input("Have something to add into the fridge?(yes/no) ")
     if respond == "yes":
         newFood = input("Add something new: ")
-        fridge.append(newFood)
+        fridge.append(newFood) #adds one more dish to the fridge
+        print("\n Let us see the new list")
+        print(fridge)
     else:
-        print("Alright friend")
+        print("Let me show you what is present")
+        print(fridge)
     print(fridge)
 
 def foodPicker():
