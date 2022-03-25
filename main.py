@@ -13,7 +13,6 @@ def storeFridge():
     else:
         print("Let me show you what is present")
         print(fridge)
-    print(fridge)
 
 def foodPicker():
     food = len(fridge)
