@@ -8,7 +8,7 @@ def storeFridge():
     if respond == "yes":
         newFood = input("Add something new: ")
         fridge.append(newFood) #adds one more dish to the fridge
-        print("\n Let us see the new list")
+        print("\nLet us see the new list")
         print(fridge)
     else:
         print("Let me show you what is present")
@@ -17,8 +17,9 @@ def storeFridge():
 def foodPicker():
     food = len(fridge)
     pick = randint(0, food)
-    print("\n You shall be eating:", fridge[pick])
+    print("\nYou shall be eating:", fridge[pick])
 
+#function containing all the other functions
 def runSystem():
     storeFridge()
     foodPicker()
