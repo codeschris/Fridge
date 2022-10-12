@@ -14,6 +14,17 @@ def storeFridge():
         print("Let me show you what is present")
         print(fridge)
 
+def open_file():
+    f = open("example.txt", "w")
+    response = input("Have something to add into the fridge?(yes/no) ")
+    if response == "yes":
+        newFood = input("Add something new: ")
+        fridge.append(newFood) #adds one more dish to the fridge
+        f.write("\nLet us see the new list")
+        f.write(fridge) #check this because of a TypeError
+
+    f.close()
+
 def foodPicker():
     food = len(fridge)
     pick = randint(0, food)
@@ -21,8 +32,9 @@ def foodPicker():
 
 #function containing all the other functions
 def runSystem():
-    storeFridge()
+    #storeFridge()
     foodPicker()
+    open_file()
 
 #Run the system
 runSystem()
