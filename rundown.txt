@@ -9,6 +9,3 @@ functions it should display/have:
 - the user can add or delete food from the list
 - it randomly chooses food from the list and gives output
 - should save input given by the user to the list even after program fully executes
-
-Changes to be made:
--use for loop to print fridge items in the list (done)
