@@ -1,0 +1,11 @@
+Fridge (Name will be changed):
+A program that chooses a meal randomly for you to eat at a specific time
+
+Modules to be used:
+- from random (randint): to generate a random number from a sequence
+
+functions it should display/have:
+- creates or uses a list to store food (like a fridge basically)
+- the user can add or delete food from the list
+- it randomly chooses food from the list and gives output
+- should save input given by the user to the list even after program fully executes
